@@ -1,31 +1,30 @@
-# cybersecurity-project
-Command-line steganography tool in C to hide and extract messages from images for secure communication
+# DESCRIPTION
+
+Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. The word steganography combines the Greek words steganos, meaning "covered, concealed, or protected", and graphein meaning "writing!"
 
 
+# REQUIREMENTS
 
----
+	* JDK 1.7 
 
-## **3. Cybersecurity — Steganography Tool (C)**
+# COMMAND LINE
 
-**GitHub short description:**  
-`Command-line steganography tool in C to hide and extract messages from images for secure communication.`  
+Encryption
+ 
+	* java -jar BMPStegano.1.0.0.jar "<Bmp Image Path>" "<Message File Path>"
+	
+Decryption
 
-**README.md**  
-```markdown
-# Steganography Tool (C)
+	* java -jar BMPStegano.1.0.0.jar "<Encrypted Bmp Image Path>"
+	
+# IMPORT JAR	
 
-A command-line steganography tool written in C for embedding and extracting hidden messages in images. Enhances data confidentiality using bitwise operations and image processing techniques.
+Encryption
+ 
+	* EncryptMainClass.EncryptDataToImage("<Bmp Image File>","<Message File Path>")
+	
+Decryption
 
-## Features
-- Embed secret text messages into images
-- Extract hidden messages from stego images
-- Lightweight C implementation for fast execution
+	* DecryptMainClass.DecryptDataFromImg("<Encrypted Bmp Image Path>")
 
-## Tech Stack
-- **Language:** C
-- **Concepts:** Steganography, File I/O, Bitwise operations
 
-## Compilation & Usage
-1. Compile:
-   ```bash
-   gcc stego.c -o stego
